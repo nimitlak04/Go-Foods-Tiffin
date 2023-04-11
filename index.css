@@ -1,0 +1,241 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    scroll-behavior: smooth;
+}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(6,8,9);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 53, 74);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 42, 63);
+  }
+
+
+.text-white{
+    font-size: large !important;
+}
+.navbarr{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%) !important;
+}
+.bgimg-b1{
+    position: relative;
+    width: 100%;
+    height: 620px;
+    background: url(images/backgrounds/b1.jpg) center;
+    background-size: cover
+}
+.downarrow-b1{
+    width: 100%;
+    height: 610px;
+    padding-top: 100px !important;
+}
+.span-icon{
+    color: rgb(255, 53, 74);
+    font-size: 26px;
+    margin-top: 430px;
+    animation: bounce 2s infinite linear;
+}
+@keyframes bounce{
+    0%, 50%, 75%, 100%{
+        transform: translateY(5px);
+        transition: 0ms;
+    } 
+    25%{
+        transform: translateY(30px);
+    }
+}
+@font-face {
+    font-family: "anydore";
+    src: url(font/Anydore.otf) format("truetype");
+}
+.font-anydore{
+    font-family: anydore;
+    color: rgb(187, 132, 20);
+}
+.w-75{
+    width: 90% !important;
+}
+.h1-responsive{
+    font-size: 46px !important;
+}
+.card{
+    border-radius: 8px !important;
+}
+.img-fluid{
+    border-radius: 8px 8px 0 0;
+}
+.hr-bold{
+    height: 2px !important;
+    border-radius: 2.5px;
+}
+.special-div{
+    position: relative;
+    width: 95% !important;
+    height: 580px !important;
+    background: url(images/backgrounds/b2.jpg) center;
+    background-size: cover;
+    margin-top: 20px !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+.special-img{
+    width: 450px;
+    margin-left: 12%;
+}
+.special-sec{
+    width: 50%;
+}
+.special-sec-text{
+    width: 45%;
+    padding-top: 100px;
+    margin-right: 5%;
+}
+.span-text{
+    font-size: 56px;
+}
+.amenities-box{
+    width: 95%;
+    height: fit-content;
+    margin-top: 35px !important;
+    margin: auto !important;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-left: 0 !important;
+    gap: 20px !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    
+}
+.amenities-icon{
+    width: 130px;
+    height: fit-content;
+    margin-inline-end: 40px;
+    box-sizing: border-box;
+}
+.amenities-icon h5{
+    font-size: 18px !important;
+}
+.amenities-icon p{
+    font-size: 14px !important;
+}
+.icon-group{
+    height: fit-content;
+    width: fit-content !important;
+    /* background-color: aqua; */
+    display: inline-block;
+    margin-left: 9.5% !important;
+    padding-left: 30px;
+    overflow: hidde;
+}
+.mt-6{
+    margin-top: 35px;
+}
+.footer-box{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(6,8,9);
+}
+.span-icon-footer{
+    font-size: 22px;
+    color: white;
+
+}
+.span-icon-footer:hover{
+    transform: translateY(-5px);
+    font-size: 22px !important;
+    color: rgb(49, 104, 255) !important;
+}
+.mapouter{
+    border-radius: 8px !important;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 900px),(min-width: 756){
+    .special-img{
+        width: 350px;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    .special-sec-text{
+        width: 45%;
+        padding-top: 120px;
+        margin-right: 5%;
+    }
+    .span-text{
+        font-size: 42px;
+    }
+    .span-para{
+        font-size: 14px;
+    }
+    .aboutus-para{
+        width: 100%;
+        text-align: center;
+        font-size: 14px !important;
+    }
+    .aboutus-subsec img{
+        width: 31%;
+    }
+    
+}
+
+@media (max-width: 756px) {
+    body{
+        background-color: whitesmoke;
+    }
+    .bgimg-b1{
+        background: url(images/backgrounds/b1-tab.jpg) center;
+        height: 610px;
+    }
+    .span-icon{
+        font-size: 22px;
+    }
+    .cards-section{
+        display: block !important;
+        width: 90% !important;
+        padding-left: 10%;
+    }
+    .card{
+        width: 80% !important;
+    }
+    .special-div{
+        background: url(images/food/f2.jpg) center no-repeat;
+    }
+    .special-img{
+        display: none;
+    }
+    .special-sec-text{
+        width: 100%;
+        float: none;
+        margin: auto;
+        margin-top: 190px;
+        text-align: center !important;
+    }
+    .span-text{
+        font-size: 36px;
+    }
+    .aboutus-para{
+        font-size: 10px !important;
+    }
+}
